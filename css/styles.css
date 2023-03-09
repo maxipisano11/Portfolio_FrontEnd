@@ -6,8 +6,9 @@
 
 .header{
     position: fixed;
-    top: 0;
     width: 100%;
+    top: 0;
+    z-index: 999;
     height: 115px;
     background-color: rgb(58, 58, 255);
 }
@@ -45,14 +46,10 @@ ul > li > a:hover {
     color:cadetblue;
 }
 
-main{
-    margin-top: 115px;
-}
-
 #banner{
     text-align: center;
     position: inherit;
-    padding-top: 115px;
+    margin-top: 115px;
     background-image: url("../img/banner.png");
     height: 465px;
 }
@@ -60,7 +57,7 @@ main{
 #fotoCv{
     border-radius: 50%;
     width: 220px;
-    margin-top: -100px;
+    margin-top: -160px;
     margin-bottom: 30px;
 }
 
@@ -71,6 +68,7 @@ main{
     color: #fff;
     font-family: 'Orbitron', sans-serif;
 }
+
 section{
     margin-bottom: 70px;
 }
@@ -79,7 +77,9 @@ section > div{
     margin-left: 20px !important;
 }
 
-
+#skills{
+    position: static;
+}
 
 #banner > h3{
     text-align: center;
@@ -97,9 +97,11 @@ p{
 sub{
     position: relative;
 }
+
 #nombre{
     text-align: left;
 }
+
 section > .row{
     margin-right: 0;
     margin-bottom: 10px;
